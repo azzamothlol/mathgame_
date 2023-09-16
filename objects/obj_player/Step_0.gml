@@ -20,6 +20,8 @@ if (coyote_time > 0){
 	if (_on_ground){
 		yspd = -9
 		coyote_time = 0;
+		ycale = 1.5;
+		xcale = .5;
 	}
 }
 //--------------------calcular velocidade no eixo x e y----------------------------
@@ -43,4 +45,12 @@ if (place_meeting(x, y + yspd, obj_colision)){
 }
 y = y + yspd;
 
+
+xcale = lerp(xcale, 1, .1);
+ycale = lerp(ycale, 1, .1);
+
+if (place_meeting(x, y + 1, obj_colision)) and (!place_meeting(x, yprevious + 1, obj_colision)) and (coyote_time = 0){
+	xcale = 1.5;
+	ycale = .5;
+}
 //eu vou me matar
