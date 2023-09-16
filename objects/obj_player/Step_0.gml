@@ -46,11 +46,15 @@ if (place_meeting(x, y + yspd, obj_colision)){
 y = y + yspd;
 
 
-xcale = lerp(xcale, 1, .1);
-ycale = lerp(ycale, 1, .1);
+xcale = lerp(xcale, 1, .2);
+ycale = lerp(ycale, 1, .2);
 
 if (place_meeting(x, y + 1, obj_colision)) and (!place_meeting(x, yprevious + 1, obj_colision)) and (coyote_time = 0){
-	xcale = 1.5;
-	ycale = .5;
+	xcale = 1.3;
+	ycale = .6;
 }
+
+
+
+
 //eu vou me matar
