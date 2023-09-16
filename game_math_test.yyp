@@ -35,7 +35,9 @@
   },
   "resources": [
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_colisao","path":"sprites/obj_colisao/obj_colisao.yy",},},
+    {"id":{"name":"spr_playe","path":"sprites/spr_playe/spr_playe.yy",},},
+    {"id":{"name":"obj_colision","path":"objects/obj_colision/obj_colision.yy",},},
+    {"id":{"name":"spr_col","path":"sprites/spr_col/spr_col.yy",},},
     {"id":{"name":"spr_player","path":"rooms/spr_player/spr_player.yy",},},
   ],
   "RoomOrderNodes": [
