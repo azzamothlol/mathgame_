@@ -1,15 +1,15 @@
 //variaveis sla lol
 var _xmove = (keyboard_check(ord("D")) - keyboard_check(ord("A")));// -1 0 1
 var _on_ground = place_meeting(x, y+1, obj_colision);
-var _key_jump = keyboard_check(ord("W"));
+var _key_jump = keyboard_check_pressed(ord("W"));
 //--------------------incremento da velocidade-------------------------------------
 if (_xmove != 0){
-    spd += spd_incriment;
-    if spd >= spd_max{
-        spd = spd_max
-    }
+	spd += spd_incriment;
+	if spd >= spd_max{
+		spd = spd_max
+	}
 }else{
-    spd = 0;
+	spd = max(spd - spd_incriment, 0)
 }
 //-------------------------------coyote time pulo----------------------------------------
 if (_key_jump){
@@ -18,7 +18,8 @@ if (_key_jump){
 if (coyote_time > 0){
 	coyote_time--;
 	if (_on_ground){
-		
+		yspd = -9
+		coyote_time = 0;
 	}
 }
 //--------------------calcular velocidade no eixo x e y----------------------------
