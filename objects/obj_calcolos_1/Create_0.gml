@@ -1,3 +1,4 @@
-numero1 = 0;
-numero2 = 0;
+num1 = 0;
+num2 = 0;
+operador = "+";
 resposta = 0;
