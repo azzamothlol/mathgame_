@@ -34,10 +34,11 @@
     "IDEVersion": "2023.8.1.102",
   },
   "resources": [
-    {"id":{"name":"obj_enemy_spawn","path":"objects/obj_enemy_spawn/obj_enemy_spawn.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
+    {"id":{"name":"obj_number_spawnser","path":"objects/obj_number_spawnser/obj_number_spawnser.yy",},},
     {"id":{"name":"spr_player_2","path":"sprites/spr_player_2/spr_player_2.yy",},},
     {"id":{"name":"obj_player_2","path":"objects/obj_player_2/obj_player_2.yy",},},
+    {"id":{"name":"spr_number_spawn","path":"sprites/spr_number_spawn/spr_number_spawn.yy",},},
     {"id":{"name":"obj_colision","path":"objects/obj_colision/obj_colision.yy",},},
     {"id":{"name":"spr_player_1","path":"sprites/spr_player_1/spr_player_1.yy",},},
     {"id":{"name":"spr_col","path":"sprites/spr_col/spr_col.yy",},},
