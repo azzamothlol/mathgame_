@@ -10,4 +10,3 @@ for (var _i = room_width/32; _i = 0; _i--){
 }
 
 
-
