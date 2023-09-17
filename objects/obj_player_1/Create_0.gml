@@ -1,3 +1,6 @@
+
+randomize();
+
 spd = 0;
 spd_max = 5;
 spd_incriment = .5
