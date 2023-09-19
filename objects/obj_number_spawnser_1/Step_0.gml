@@ -5,10 +5,9 @@
 if (keyboard_check_pressed(ord("E"))){
 	criar_poblemas();
 }
-var _i = 8; 
-repeat(9){
-	if (place_meeting(inst_id[_i].x, inst_id[_i].y, obj_player_1)) and (inst_id[_i].sou_correta = true) and (keyboard_check_pressed(ord("Q"))){
-		criar_poblemas();
+if  (keyboard_check_pressed(ord("Q"))){
+		if (place_meeting(correta_id.x, correta_id.y, obj_player_1)){
+		criar_poblemas()
+		global.pontos_player_1++;
 	}
-	_i--;
 }
