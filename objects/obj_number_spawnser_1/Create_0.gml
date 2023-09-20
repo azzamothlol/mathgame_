@@ -72,7 +72,7 @@ function criar_poblemas(){
 			case "/":
 			_num1 = irandom_range(1, 9);
 			_num2 = irandom_range(1, 9);
-			while (!_num1 mod _num2 = 0){
+			while (_num1 mod _num2 = 0){
 			_num1 = irandom_range(1, 9);
 			_num2 = irandom_range(1, 9);
 			}
@@ -93,6 +93,18 @@ function criar_poblemas(){
 		break;
 		case "-":
 		_resposta = _num1 - _num2;
+		break;
+		case "*":
+		_resposta = _num1 * _num2;
+		break;
+		case "/":
+			_num1 = irandom_range(1, 9);
+			_num2 = irandom_range(1, 9);
+			while (_num1 mod _num2 = 0){
+			_num1 = irandom_range(1, 9);
+			_num2 = irandom_range(1, 9);
+			}
+			_resposta = _num1 / _num2;
 		break;
 	}
 	switch(_operador_2){
