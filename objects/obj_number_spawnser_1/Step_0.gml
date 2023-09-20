@@ -11,3 +11,14 @@ if  (keyboard_check_pressed(ord("Q"))){
 		global.pontos_player_1++;
 	}
 }
+
+if  (keyboard_check_pressed(ord("T"))){
+	global.dificuldade_player_1++;
+}
+//if (global.pontos_player_1 < 3){
+//	global.dificuldade_player_1 = 1
+//}
+
+//if (global.pontos_player_1 > 4){
+//	global.dificuldade_player_1 = 1
+//}

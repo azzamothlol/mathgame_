@@ -52,5 +52,5 @@ function criar_poblemas(){
 		}
 		_i--;
 	}
+	
 }
-
