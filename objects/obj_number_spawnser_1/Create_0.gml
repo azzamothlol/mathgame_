@@ -3,7 +3,7 @@ number_xpos = [320, 448, 352, 416, 320, 448, 160, 384, 608];//posicoes x
 number_ypos = [96, 96, 288, 288, 416, 416, 576, 576, 576];//posicoes y
 calculos = instance_create_layer(160, 800, "utilidades", obj_calcolos_1)
 perguntas_strings = array_create(9, "")//array que ira cinter as perguntas que devem ser utilizadas no decorrer do jogo
-respostas = array_create(9, 0);
+respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);
 inst_id = array_create(9, noone)//criar array da id das opsoes 
 global.pontos_player_1 = 0;
@@ -132,6 +132,28 @@ repeat(20){
 	}
 	_i2--;
 }
-show_debug_message(perguntas_strings)
-show_debug_message(respostas)
-show_debug_message(id_corretas)
+show_debug_message(perguntas_strings);
+show_debug_message(respostas);
+show_debug_message(id_corretas);
+
+pergunta_de_agora = 19;
+
+function refresh_question(){
+	if (pergunta_de_agora < 0){
+		pergunta_de_agora = 0;
+	}
+	var _correta = id_corretas[pergunta_de_agora]
+	calculos.perguntas = perguntas_strings[pergunta_de_agora];
+	var _a = 8;
+	repeat (9){
+		show_debug_message(inst_id[_a]);
+		show_debug_message(_correta);
+		if (inst_id[_a] = _correta){
+			show_debug_message(_a)
+			inst_id[_a].valor = respostas[pergunta_de_agora];
+		}
+		_a--;
+	}
+	pergunta_de_agora--;
+}
+refresh_question();
