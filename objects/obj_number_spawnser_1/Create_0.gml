@@ -158,4 +158,4 @@ function refresh_question(){
 	numero_pergunta--;
 }
 refresh_question();
-//teste
+//ew34wste
