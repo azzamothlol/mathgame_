@@ -44,6 +44,8 @@
     {"id":{"name":"spr_numeros","path":"sprites/spr_numeros/spr_numeros.yy",},},
     {"id":{"name":"obj_numbers_2","path":"objects/obj_numbers_2/obj_numbers_2.yy",},},
     {"id":{"name":"obj_player_2","path":"objects/obj_player_2/obj_player_2.yy",},},
+    {"id":{"name":"Sprite9","path":"sprites/Sprite9/Sprite9.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
     {"id":{"name":"spr_number_spawn","path":"sprites/spr_number_spawn/spr_number_spawn.yy",},},
     {"id":{"name":"spr_pontos","path":"sprites/spr_pontos/spr_pontos.yy",},},
     {"id":{"name":"spr_numbers","path":"sprites/spr_numbers/spr_numbers.yy",},},

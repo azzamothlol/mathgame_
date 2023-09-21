@@ -7,7 +7,7 @@ respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);
 inst_id = array_create(9, noone)//criar array da id das opsoes 
 correta_agora_id= noone;
-global.pontos_player_1 = 0;
+global.pontos_player_1 = -1;
 global.dificuldade_player_1 = 1;
 
 //criar opçoes e guardar a id deles em um array 
@@ -136,7 +136,7 @@ repeat(20){
 
 numero_pergunta = 19;
 
-function refresh_question(){
+function refresh_question(){ 
 	var _correta, _a, _randomiador;
 	_correta = id_corretas[numero_pergunta]
 	calculos.perguntas = perguntas_strings[numero_pergunta];
