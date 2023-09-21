@@ -6,6 +6,7 @@ perguntas_strings = array_create(9, "")//array que ira cinter as perguntas que d
 respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);
 inst_id = array_create(9, noone)//criar array da id das opsoes 
+correta_agora_id= noone;
 global.pontos_player_1 = 0;
 global.dificuldade_player_1 = 1;
 
@@ -16,7 +17,6 @@ repeat(9){
 	inst_id[_i] = _inst;
 	_i--;	
 }
-show_debug_message(inst_id);//mostrar array no console
 
 var _num1, _num2, _num3, _operador_1,_operador_2, _aleatorizar, _perguntas_strings, _resposta, _i2;
 _i2 = 19
@@ -33,7 +33,8 @@ repeat(20){
 	if (_i2 <= 7){
 		global.dificuldade_player_1 = 4
 	}
-	id_corretas[_i2] = choose(inst_id)
+	var _escreve = irandom_range(0, 8);
+	id_corretas[_i2] = inst_id[_escreve];
 	switch (global.dificuldade_player_1){
 	case 1:
 	//criar um poblema matematico
@@ -132,28 +133,27 @@ repeat(20){
 	}
 	_i2--;
 }
-show_debug_message(perguntas_strings);
-show_debug_message(respostas);
-show_debug_message(id_corretas);
 
-pergunta_de_agora = 19;
+numero_pergunta = 19;
 
 function refresh_question(){
-	if (pergunta_de_agora < 0){
-		pergunta_de_agora = 0;
-	}
-	var _correta = id_corretas[pergunta_de_agora]
-	calculos.perguntas = perguntas_strings[pergunta_de_agora];
-	var _a = 8;
+	var _correta, _a, _randomiador;
+	_correta = id_corretas[numero_pergunta]
+	calculos.perguntas = perguntas_strings[numero_pergunta];
+	_a = 8;
 	repeat (9){
-		show_debug_message(inst_id[_a]);
-		show_debug_message(_correta);
 		if (inst_id[_a] = _correta){
-			show_debug_message(_a)
-			inst_id[_a].valor = respostas[pergunta_de_agora];
+			inst_id[_a].valor = respostas[numero_pergunta];
+			correta_agora_id = inst_id[_a];
+		}else{
+			_randomiador = irandom_range(-5, 5);
+			if (_randomiador = 0){
+				_randomiador = choose(-1, 1)
+			}
+			inst_id[_a].valor = respostas[numero_pergunta] + _randomiador;  
 		}
 		_a--;
 	}
-	pergunta_de_agora--;
+	numero_pergunta--;
 }
 refresh_question();
