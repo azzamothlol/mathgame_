@@ -122,7 +122,7 @@ repeat(20){
 	}
 	switch(_operador_2){
 		case "+":
-		respostas[_i2] =  respostas[_i2] - _num3;
+		respostas[_i2] =  respostas[_i2] + _num3;
 		break;
 		case "-":
 		respostas[_i2] = respostas[_i2] - _num3;
@@ -141,6 +141,7 @@ function refresh_question(){
 	_correta = id_corretas[numero_pergunta]
 	calculos.perguntas = perguntas_strings[numero_pergunta];
 	_a = 8;
+	global.pontos_player_1++;
 	repeat (9){
 		if (inst_id[_a] = _correta){
 			inst_id[_a].valor = respostas[numero_pergunta];

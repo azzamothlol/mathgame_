@@ -28,7 +28,7 @@
     {"name":"spr_number_1","order":5,"path":"sprites/spr_number_1/spr_number_1.yy",},
     {"name":"obj_colision","order":3,"path":"objects/obj_colision/obj_colision.yy",},
     {"name":"spr_player_1","order":2,"path":"sprites/spr_player_1/spr_player_1.yy",},
-    {"name":"obj_numbers_1","order":3,"path":"objects/obj_numbers_1/obj_numbers_1.yy",},
+    {"name":"obj_numbers_1","order":4,"path":"objects/obj_numbers_1/obj_numbers_1.yy",},
     {"name":"obj_calcolos_1","order":1,"path":"objects/obj_calcolos_1/obj_calcolos_1.yy",},
     {"name":"obj_calcolos_2","order":1,"path":"objects/obj_calcolos_2/obj_calcolos_2.yy",},
     {"name":"spr_col","order":1,"path":"sprites/spr_col/spr_col.yy",},
