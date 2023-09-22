@@ -1,7 +1,7 @@
 //arrays das posoes de localizacao dos locais das opcoes
-number_xpos = [320, 448, 352, 416, 320, 448, 160, 384, 608];//posicoes x
-number_ypos = [96, 96, 288, 288, 416, 416, 576, 576, 576];//posicoes y
-calculos = instance_create_layer(160, 800, "utilidades", obj_calcolos_1)
+number_xpos = [192, 320, 224, 288, 192, 320, 64, 448, 256];//posicoes x
+number_ypos = [96, 96, 288, 288, 416, 416, 640, 640, 544];//posicoes y
+calculos = instance_create_layer(544, 64, "utilidades", obj_calcolos_1)
 perguntas_strings = array_create(9, "")//array que ira cinter as perguntas que devem ser utilizadas no decorrer do jogo
 respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);

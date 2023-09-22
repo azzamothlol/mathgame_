@@ -1,14 +1,12 @@
-//arrays das posoes de localizacao dos locais das opcoes
-number_xpos = [1120, 1248, 1152, 1216, 1120, 1248, 960, 1184, 1408];//posicoes x
-number_ypos = [96, 96, 288, 288, 416, 416, 576, 576, 576];//posicoes y
-//calculos = instance_create_layer(960, 800, "utilidades", obj_calcolos_2);
-calculos = instance_create_layer(960, 800, "utilidades", obj_calcolos_2)
+number_xpos = [928, 1056, 960, 1028, 928, 1056, 800, 1184,992];//posicoes x
+number_ypos = [96, 96, 288, 288, 416, 416, 640, 640, 544];//posicoes y
+calculos = instance_create_layer(608, 288, "utilidades", obj_calcolos_2)
 perguntas_strings = array_create(9, "")//array que ira cinter as perguntas que devem ser utilizadas no decorrer do jogo
 respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);
 inst_id = array_create(9, noone)//criar array da id das opsoes 
 correta_agora_id= noone;
-global.pontos_player_2 = 0;
+global.pontos_player_2 = -1;
 global.dificuldade_player_2 = 1;
 
 var _i = 8;
