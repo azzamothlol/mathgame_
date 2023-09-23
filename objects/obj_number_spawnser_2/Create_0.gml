@@ -1,6 +1,6 @@
 number_xpos = [928, 1056, 960, 1028, 928, 1056, 800, 1184,992];//posicoes x
 number_ypos = [96, 96, 288, 288, 416, 416, 640, 640, 544];//posicoes y
-calculos = instance_create_layer(608, 288, "utilidades", obj_calcolos_2)
+calculos = instance_create_layer(672, 288, "utilidades", obj_calcolos_2)
 perguntas_strings = array_create(9, "")//array que ira cinter as perguntas que devem ser utilizadas no decorrer do jogo
 respostas = array_create(20, 0);
 id_corretas = array_create(20, 0);
@@ -9,6 +9,7 @@ correta_agora_id= noone;
 global.pontos_player_2 = -1;
 global.dificuldade_player_2 = 1;
 
+//criar opçoes e guardar a id deles em um array 
 var _i = 8;
 repeat(9){
 	var _inst = instance_create_layer(number_xpos[_i], number_ypos[_i], "utilidades", obj_numbers_1);
@@ -29,7 +30,7 @@ repeat(20){
 		global.dificuldade_player_2 = 3
 	}
 	if (_i2 <= 7){
-		global.dificuldade_player2 = 4
+		global.dificuldade_player_2 = 4
 	}
 	var _escreve = irandom_range(0, 8);
 	id_corretas[_i2] = inst_id[_escreve];
@@ -134,7 +135,7 @@ repeat(20){
 
 numero_pergunta = 19;
 
-function refresh_question(){
+function refresh_question(){ 
 	var _correta, _a, _randomiador;
 	_correta = id_corretas[numero_pergunta]
 	calculos.perguntas = perguntas_strings[numero_pergunta];
@@ -156,3 +157,4 @@ function refresh_question(){
 	numero_pergunta--;
 }
 refresh_question();
+//ew34wste
