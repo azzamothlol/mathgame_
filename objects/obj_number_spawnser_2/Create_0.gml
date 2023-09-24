@@ -156,9 +156,9 @@ function refresh_question(){
 			_a--;
 		}
 		numero_pergunta--;
+	}else{
+		game_restart();
 	}
-}else{
-	
 }
 refresh_question();
 //ew34wste

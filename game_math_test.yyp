@@ -48,6 +48,7 @@
     {"id":{"name":"Sprite9","path":"sprites/Sprite9/Sprite9.yy",},},
     {"id":{"name":"snd_option_correct","path":"sounds/snd_option_correct/snd_option_correct.yy",},},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"spr_number_spawn","path":"sprites/spr_number_spawn/spr_number_spawn.yy",},},
     {"id":{"name":"spr_pontos","path":"sprites/spr_pontos/spr_pontos.yy",},},
     {"id":{"name":"spr_numbers","path":"sprites/spr_numbers/spr_numbers.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"obj_calcolos_2","path":"objects/obj_calcolos_2/obj_calcolos_2.yy",},},
     {"id":{"name":"spr_col","path":"sprites/spr_col/spr_col.yy",},},
     {"id":{"name":"obj_number_spawnser_2","path":"objects/obj_number_spawnser_2/obj_number_spawnser_2.yy",},},
+    {"id":{"name":"CAMERA","path":"sprites/CAMERA/CAMERA.yy",},},
     {"id":{"name":"spr_player","path":"rooms/spr_player/spr_player.yy",},},
   ],
   "RoomOrderNodes": [
