@@ -137,25 +137,29 @@ repeat(20){
 numero_pergunta = 19;
 
 function refresh_question(){ 
-	var _correta, _a, _randomiador;
-	_correta = id_corretas[numero_pergunta]
-	calculos.perguntas = perguntas_strings[numero_pergunta];
-	_a = 8;
-	global.pontos_player_1++;
-	repeat (9){
-		if (inst_id[_a] = _correta){
-			inst_id[_a].valor = respostas[numero_pergunta];
-			correta_agora_id = inst_id[_a];
-		}else{
-			_randomiador = irandom_range(-5, 5);
-			if (_randomiador = 0){
-				_randomiador = choose(-1, 1)
+	if (numero_pergunta >= 0){
+		var _correta, _a, _randomiador;
+		_correta = id_corretas[numero_pergunta]
+		calculos.perguntas = perguntas_strings[numero_pergunta];
+		_a = 8;
+		global.pontos_player_1++;
+		repeat (9){
+			if (inst_id[_a] = _correta){
+				inst_id[_a].valor = respostas[numero_pergunta];
+				correta_agora_id = inst_id[_a];
+			}else{
+				_randomiador = irandom_range(-5, 5);
+				if (_randomiador = 0){
+					_randomiador = choose(-1, 1)
+				}
+				inst_id[_a].valor = respostas[numero_pergunta] + _randomiador;  
 			}
-			inst_id[_a].valor = respostas[numero_pergunta] + _randomiador;  
+			_a--;
 		}
-		_a--;
+		numero_pergunta--;
+	}else{
+		game_restart()
 	}
-	numero_pergunta--;
 }
 refresh_question();
 //ew34wste
