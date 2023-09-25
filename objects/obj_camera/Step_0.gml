@@ -4,10 +4,17 @@ var _xto, _yto;
 var _offsetx = 0;
 var _camera_speed = 10;
 
-
-
-if (keyboard_check(ord("F"))) {
-    _follow = obj_player_2;
+if (global.pontos_player_1 = 20){
+	_follow = obj_player_1
+	follow_start = true
+	audio_play_sound(snd_i_win, 1, false);
+}
+if (global.pontos_player_2 = 20){
+	_follow = obj_player_2
+	follow_start = true;
+	audio_play_sound(snd_i_win, 1, false);
+}
+if (follow_start = true) {
 	cam_target_width = room_width/2;
 	cam_target_heigth = room_height/2;
 	cam_height = lerp(cam_height, cam_target_heigth, .1)
