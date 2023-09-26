@@ -139,6 +139,9 @@ function refresh_question(){
 	if (global.pontos_player_2 < 20){
 		global.pontos_player_2++;
 	}
+	if (global.pontos_player_2 == 20){
+		audio_play_sound(snd_i_win, 1, false);
+	}
 	if (numero_pergunta >= 0){
 		var _correta, _a, _randomiador;
 		_correta = id_corretas[numero_pergunta]

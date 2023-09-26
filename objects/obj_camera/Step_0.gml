@@ -7,12 +7,10 @@ var _camera_speed = 10;
 if (global.pontos_player_1 = 20){
 	_follow = obj_player_1
 	follow_start = true
-	audio_play_sound(snd_i_win, 1, false);
 }
 if (global.pontos_player_2 = 20){
 	_follow = obj_player_2
 	follow_start = true;
-	audio_play_sound(snd_i_win, 1, false);
 }
 if (follow_start = true) {
 	cam_target_width = room_width/2;
@@ -36,11 +34,11 @@ if (instance_exists(_follow)) {
     _yto = room_height / 2;
     _xto = room_width / 2;
 }
+_xto = clamp(_xto, 0 + cam_width/2, room_width - cam_width/2);
+_yto = clamp(_yto, 0 + cam_height/2, room_height - cam_height/2);
 
-x += (_xto - x) / _camera_speed;
-y += (_yto - y) / _camera_speed;
-x = clamp(x, 0 + cam_width/2, room_width - cam_width/2);
-y = clamp(y, 0 + cam_height/2, room_height - cam_height/2);
+x = lerp(x, _xto, .1)
+y = lerp(y, _yto, .1)
 
 
 

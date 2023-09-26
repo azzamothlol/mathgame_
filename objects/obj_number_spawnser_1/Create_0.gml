@@ -138,7 +138,10 @@ numero_pergunta = 19;
 
 function refresh_question(){ 
 	if (global.pontos_player_1 < 20){
-		global.pontos_player_1++;
+		global.pontos_player_1++
+	}
+	if (global.pontos_player_1 == 20){
+		audio_play_sound(snd_i_win, 1, false);
 	}
 	if (numero_pergunta >= 0){
 		var _correta, _a, _randomiador;
