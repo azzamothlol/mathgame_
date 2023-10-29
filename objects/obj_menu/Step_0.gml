@@ -16,6 +16,4 @@ if (keyboard_check(vk_enter)){
 		break
 	}
 }
-if (keyboard_check(vk_enter) and selected = 0){
-	room_goto(spr_player);
-}
+

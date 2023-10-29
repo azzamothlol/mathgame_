@@ -1,4 +1,3 @@
-draw_self();
 draw_set_halign(fa_center);
 for (var _i = 2 ; _i > -1; _i--) {
 	if (_i = selected){

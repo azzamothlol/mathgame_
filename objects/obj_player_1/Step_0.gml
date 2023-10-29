@@ -48,6 +48,7 @@ if (place_meeting(x, y + yspd, obj_colision)){
 	yspd = 0;
 }
 y = y + yspd;
+//animaçao personagem
 
 
 xcale = lerp(xcale, 1, .2);
@@ -56,8 +57,14 @@ ycale = lerp(ycale, 1, .2);
 if (place_meeting(x, y + 1, obj_colision)) and (!place_meeting(x, yprevious + 1, obj_colision)) and (coyote_time = 0){
 	xcale = 1.3;
 	ycale = .6;
-}
+} 
 
+if (hspd != 0){
+	sprite_index = spr_character_walking;
+	xcale = sign(hspd);
+}else{
+	sprite_index = spr_character_idle;
+}
 
 
 

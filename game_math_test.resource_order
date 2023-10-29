@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_numeros","order":4,"path":"objects/obj_numeros/obj_numeros.yy",},
     {"name":"snd_i_win","order":1,"path":"sounds/snd_i_win/snd_i_win.yy",},
+    {"name":"spr_character_walking","order":10,"path":"sprites/spr_character_walking/spr_character_walking.yy",},
     {"name":"obj_player_pontos_1","order":3,"path":"objects/obj_player_pontos_1/obj_player_pontos_1.yy",},
     {"name":"round_going_loop","order":2,"path":"sounds/round_going_loop/round_going_loop.yy",},
     {"name":"obj_number_spawnser_1","order":2,"path":"objects/obj_number_spawnser_1/obj_number_spawnser_1.yy",},
@@ -26,6 +27,7 @@
     {"name":"obj_gamestarter","order":6,"path":"objects/obj_gamestarter/obj_gamestarter.yy",},
     {"name":"rm_startscreen","order":1,"path":"rooms/rm_startscreen/rm_startscreen.yy",},
     {"name":"obj_numbers_2","order":4,"path":"objects/obj_numbers_2/obj_numbers_2.yy",},
+    {"name":"spr_char_jump","order":12,"path":"sprites/spr_char_jump/spr_char_jump.yy",},
     {"name":"Sprite9","order":8,"path":"sprites/Sprite9/Sprite9.yy",},
     {"name":"obj_camera","order":5,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"snd_airhorn","order":3,"path":"sounds/snd_airhorn/snd_airhorn.yy",},
@@ -42,6 +44,7 @@
     {"name":"spr_col","order":1,"path":"sprites/spr_col/spr_col.yy",},
     {"name":"obj_number_spawnser_2","order":1,"path":"objects/obj_number_spawnser_2/obj_number_spawnser_2.yy",},
     {"name":"snd_beep","order":4,"path":"sounds/snd_beep/snd_beep.yy",},
+    {"name":"spr_character_idle","order":11,"path":"sprites/spr_character_idle/spr_character_idle.yy",},
     {"name":"CAMERA","order":9,"path":"sprites/CAMERA/CAMERA.yy",},
   ],
 }
