@@ -1,6 +1,6 @@
 
 randomize();
-lado_olhando = 1;//pode ser 1 para direita e -1 para esquerda
+
 spd = 0;
 spd_max = 5;
 spd_incriment = .5
