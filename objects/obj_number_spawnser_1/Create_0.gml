@@ -16,6 +16,7 @@ repeat(9){
 	var _inst = instance_create_layer(number_xpos[_i], number_ypos[_i], "utilidades", obj_numbers_1);
 	inst_id[_i] = _inst;
 	_i--;	
+	show_debug_message(inst_id)
 }
 
 var _num1, _num2, _num3, _operador_1,_operador_2, _aleatorizar, _perguntas_strings, _resposta, _i2;
