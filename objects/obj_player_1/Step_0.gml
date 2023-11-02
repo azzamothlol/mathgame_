@@ -21,7 +21,7 @@ if (coyote_time > 0){
 	if (_on_ground){
 		yspd = -15
 		coyote_time = 0;
-		ycale = 1.5;
+		ycale = 2;
 		xcale = .5;
 	}
 }
@@ -50,13 +50,27 @@ if (place_meeting(x, y + yspd, obj_colision)){
 y = y + yspd;
 //animaçao personagem
 
-if (hspd != 0){
-	sprite_index = spr_character_walking;
-	lado_olhando = sign(hspd);
-}else{
-	sprite_index = spr_character_idle;
-}
 
+if (_on_ground) and (yspd == 0){
+	image_speed = 1;
+	if (hspd != 0){
+	sprite_index = spr_character_walking;
+	}else{
+		sprite_index = spr_character_idle;
+	}
+}else{
+	sprite_index = spr_char_jump
+	image_speed = 0;
+	if (sign(yspd) = 1){
+		image_index = 1;
+	}
+	if (sign(yspd) = -1){
+		image_index = 0;
+	}
+}
+if (sign(hspd) != 0){
+	lado_olhando = sign(hspd);  
+}
 xcale = lerp(xcale, lado_olhando, .2);
 ycale = lerp(ycale, 1, .2);
 

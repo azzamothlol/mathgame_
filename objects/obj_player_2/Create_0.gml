@@ -12,3 +12,4 @@ ycale = 1;
 xcale =1;
 angl = 0;
 hspd = 0;
+lado_olhando = 1;

@@ -49,12 +49,31 @@ if (place_meeting(x, y + yspd, obj_colision)){
 }
 y = y + yspd;
 
-
-xcale = lerp(xcale, 1, .2);
+if (_on_ground) and (yspd == 0){
+	image_speed = 1;
+	if (hspd != 0){
+	sprite_index = spr_character_walking;
+	}else{
+		sprite_index = spr_character_idle;
+	}
+}else{
+	sprite_index = spr_char_jump
+	image_speed = 0;
+	if (sign(yspd) = 1){
+		image_index = 1;
+	}
+	if (sign(yspd) = -1){
+		image_index = 0;
+	}
+}
+if (sign(hspd) != 0){
+	lado_olhando = sign(hspd);  
+}
+xcale = lerp(xcale, lado_olhando, .2);
 ycale = lerp(ycale, 1, .2);
 
 if (place_meeting(x, y + 1, obj_colision)) and (!place_meeting(x, yprevious + 1, obj_colision)) and (coyote_time = 0){
-	xcale = 1.3;
+	xcale = 1.3 * lado_olhando;
 	ycale = .6;
 }
 
