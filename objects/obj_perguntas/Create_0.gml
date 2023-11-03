@@ -2,6 +2,7 @@ image_speed = 0;//velocidade da animaçao = 0
 string_pergunta = "";//pergunta de agora
 respostas = 0;//resposta da pergunta
 teste = 0;
+correta_agora = noone;
 //player 1 opcoes lmao
 number_xpos_player_1 = [192, 320, 224, 288, 192, 320, 64, 448, 256];//posicoes x
 number_ypos_player_1 = [96, 96, 288, 288, 416, 416, 640, 640, 544];//posicoes y
@@ -72,9 +73,21 @@ function criar_perguntas(){
 	}
 }
 
-function gerar_opcoes_player_1(){
-	for (var _i; _i > -1; i--){
+function gerar_opcoes(){
+	var _correta = irandom_range(0, 8);
+	
+	for (var _i = 8; _i > -1; _i--){
+		var _aleatorizar = irandom_range(-9, 9);
+		if (_aleatorizar = 0){
+			_aleatorizar = choose(-1, 1);
+		}
+		if (_i = _correta){
+			_aleatorizar = 0;
+			correta_agora = opcoes_id_player_1[_correta]
+		}
 		
+		opcoes_id_player_1[_i].valor = respostas + _aleatorizar;
+		opcoes_id_player_2[_i].valor = respostas + _aleatorizar;
 	}
 }
 

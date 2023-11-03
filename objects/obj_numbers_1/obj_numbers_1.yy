@@ -32,6 +32,9 @@
     "name": "spr_numbers",
     "path": "sprites/spr_numbers/spr_numbers.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_numbers",
+    "path": "sprites/spr_numbers/spr_numbers.yy",
+  },
   "visible": true,
 }
