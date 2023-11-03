@@ -34,8 +34,8 @@
     "path": "sprites/spr_player_2/spr_player_2.yy",
   },
   "spriteMaskId": {
-    "name": "spr_character_walking",
-    "path": "sprites/spr_character_walking/spr_character_walking.yy",
+    "name": "spr_character_idle",
+    "path": "sprites/spr_character_idle/spr_character_idle.yy",
   },
   "visible": true,
 }
