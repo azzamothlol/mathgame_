@@ -48,6 +48,7 @@
     {"id":{"name":"spr_player_2","path":"sprites/spr_player_2/spr_player_2.yy",},},
     {"id":{"name":"spr_numeros","path":"sprites/spr_numeros/spr_numeros.yy",},},
     {"id":{"name":"obj_gamestarter","path":"objects/obj_gamestarter/obj_gamestarter.yy",},},
+    {"id":{"name":"snd_roleta","path":"sounds/snd_roleta/snd_roleta.yy",},},
     {"id":{"name":"rm_startscreen","path":"rooms/rm_startscreen/rm_startscreen.yy",},},
     {"id":{"name":"obj_numbers_2","path":"objects/obj_numbers_2/obj_numbers_2.yy",},},
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},},

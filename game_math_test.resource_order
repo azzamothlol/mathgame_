@@ -27,6 +27,7 @@
     {"name":"obj_number_spawnser_1","order":2,"path":"objects/obj_number_spawnser_1/obj_number_spawnser_1.yy",},
     {"name":"spr_numeros","order":6,"path":"sprites/spr_numeros/spr_numeros.yy",},
     {"name":"obj_gamestarter","order":5,"path":"objects/obj_gamestarter/obj_gamestarter.yy",},
+    {"name":"snd_roleta","order":8,"path":"sounds/snd_roleta/snd_roleta.yy",},
     {"name":"rm_startscreen","order":1,"path":"rooms/rm_startscreen/rm_startscreen.yy",},
     {"name":"obj_numbers_2","order":4,"path":"objects/obj_numbers_2/obj_numbers_2.yy",},
     {"name":"spr_char_jump","order":11,"path":"sprites/spr_char_jump/spr_char_jump.yy",},

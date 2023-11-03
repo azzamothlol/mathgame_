@@ -2,8 +2,9 @@ image_speed = 0;//velocidade da animaçao = 0
 string_pergunta = "";//pergunta de agora
 respostas = 0;//resposta da pergunta
 teste = 0;
-correta_agora = noone;
-
+correta_agora_1 = noone;
+correta_agora_2 = noone;
+mostrar_perguntas = false;
 
 //player 1 opcoes lmao
 number_xpos_player_1 = [192, 320, 224, 288, 192, 320, 64, 448, 256];//posicoes x
@@ -29,33 +30,33 @@ for (var _i = 8; _i > -1; _i--){
 //==========================funçao criar perguntas=========================================
 
 
-dificuldade_pergunta = 0;//variavel da dificuldade da pergunta a ser gerada
+dificuldade_pergunta = 1;//variavel da dificuldade da pergunta a ser gerada
 numero_da_pergunta = 0;//pergunta de agora
+
 function criar_perguntas(){
-	//selecionar dificuldade (mds essa parte da uma merda mas e o que vai ser pq nn sei como fazer melhor)
-	/*
-	if (numero_da_pergunta >= 30){
-		dificuldade_pergunta = 4
-	}
-	if (numero_da_pergunta <= 29) and (numero_da_pergunta >= 17){
-		dificuldade_pergunta = 3
-	}
-	if (numero_da_pergunta <= 16) and (numero_da_pergunta >= 8){
-		dificuldade_pergunta = 2
-	d
-	*/
-	if (numero_da_pergunta <= 7){
-		dificuldade_pergunta = 1
-	}
 	
-	//gerar perguntas dependendo da dificuldade
+	
 	var _numero1, _numero2, _numero3, _operador1, _operador2;
 	switch (dificuldade_pergunta){
-		case 1:
-		//criar um poblema matematico de nivel basico(1)
+	case 1:
+	//criar um poblema matematico
+	_numero1= irandom(9)//gerar numero aleatorio entre 1 e 9
+	_numero2 = irandom(9)//gerar outro numero aleatorio entre 1 e 9
+	_operador1= choose("+", "-")//sececionar operador
+	switch (_operador1){
+		case "+":
+		respostas = _numero1 + _numero2;
+		break;
+		case "-":
+		respostas = _numero1 - _numero2;
+		break;
+	}
+	string_pergunta = (string(_numero1) +" "+_operador1 +" "+string(_numero2));
+	break;
+	case 2:
+		_operador1 = choose("+", "-", "*" )//sececionar operador
 		_numero1= irandom(9)//gerar numero aleatorio entre 1 e 9
 		_numero2 = irandom(9)//gerar outro numero aleatorio entre 1 e 9
-		_operador1= choose("+", "-")//sececionar operador
 		switch (_operador1){
 		case "+":
 		respostas = _numero1 + _numero2;
@@ -63,24 +64,86 @@ function criar_perguntas(){
 		case "-":
 		respostas = _numero1 - _numero2;
 		break;
+		case "*":
+		 respostas = _numero1 * _numero2;
+		break;
 		}
-		string_pergunta = (string(_numero1) + " " + _operador1 + " " + string(_numero2))
-		show_debug_message(string_pergunta)
-		case 2:
-		
-		case 3:
-		
-		case 4:
-		
+		string_pergunta = (string(_numero1) +" "+ _operador1 +" "+ string(_numero2));
+	break;
+	case 3:
+	_operador1 = choose("+", "-", "*", "/")
+	_numero1= irandom(9)//gerar numero aleatorio entre 1 e 9
+	_numero2 = irandom(9)//gerar outro numero aleatorio entre 1 e 9
+		switch(_operador1){
+			case "+":
+			respostas = _numero1 + _numero2;
+			break;
+			case "-":
+			respostas = _numero1 - _numero2;
+			break;
+			case "*":
+			respostas = _numero1 * _numero2;
+			break;
+			case "/":
+			_numero1 = irandom_range(1, 9);
+			_numero2 = irandom_range(1, 9);
+			while (_numero1 mod _numero2 != 0){
+			_numero1 = irandom_range(1, 9);
+			_numero2 = irandom_range(1, 9);
+			}
+			respostas = _numero1 / _numero2;
+			break;
+		}
+		string_pergunta = (string(_numero1) +" "+ _operador1 +" "+ string(_numero2));
+	break;
+	case 4:
+	_numero1= irandom(9)//gerar numero aleatorio entre 1 e 9
+	_numero2 = irandom(9)//gerar outro numero aleatorio entre 1 e 9
+	_numero3 = irandom(9)
+	_operador1 = choose("+", "-", "*", "/")
+	_operador2 = choose("+", "-")
+	switch (_operador1){
+		case "+":
+		respostas = _numero1 + _numero2;
+		break;
+		case "-":
+		respostas = _numero1 - _numero2;
+		break;
+		case "*":
+		respostas = _numero1 * _numero2;
+		break;
+		case "/":
+			_numero1 = irandom_range(1, 9);
+			_numero2 = irandom_range(1, 9);
+			while (_numero1 mod _numero2 != 0){
+			_numero1 = irandom_range(1, 9);
+			_numero2 = irandom_range(1, 9);
+			}
+			respostas = _numero1 / _numero2;
+		break;
+	}
+	switch(_operador2){
+		case "+":
+		respostas =  respostas + _numero3;
+		break;
+		case "-":
+		respostas = respostas - _numero3;
+		break;
+	}
+	string_pergunta = (string(_numero1) +" "+ _operador1 +" "+ string(_numero2) +" "+_operador2+" "+string(_numero3));
+	break
 	}
 }
 
+
+
 function gerar_opcoes(){
-	var _correta = choose(0,8)
+	var _correta_1 = irandom_range(0,8)
+	var _correta_2 = irandom_range(0,8)
 	for (var _i = 8;_i > -1; _i-- ){
-		 if (_i = _correta){
+		 if (_i = _correta_1){
 			 opcoes_id_player_1[_i].valor = respostas;
-			 correta_agora = opcoes_id_player_1[_i]
+			 correta_agora_1 = opcoes_id_player_1[_i]
 		 }else{
 			 var _aleatorizar = irandom_range(-9, 9)
 			 if (_aleatorizar = 0){
@@ -88,19 +151,16 @@ function gerar_opcoes(){
 			 }
 			 opcoes_id_player_1[_i].valor = respostas + _aleatorizar;
 		 }
+		 //poraaaaaaaaaaaaaaaaaaaaa
+		  if (_i = _correta_2){
+			 opcoes_id_player_2[_i].valor = respostas;
+			 correta_agora_2 = opcoes_id_player_2[_i]
+		 }else{
+			 var _aleatorizar = irandom_range(-9, 9)
+			 if (_aleatorizar = 0){
+				_aleatorizar = choose(-2, -1, 1, 2) 
+			 }
+			 opcoes_id_player_2[_i].valor = respostas + _aleatorizar;
+		 }
 	}
-	show_debug_message(correta_agora);	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
