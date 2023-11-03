@@ -37,6 +37,7 @@
   },
   "resources": [
     {"id":{"name":"obj_numeros","path":"objects/obj_numeros/obj_numeros.yy",},},
+    {"id":{"name":"spr_counter_question_refresh","path":"sprites/spr_counter_question_refresh/spr_counter_question_refresh.yy",},},
     {"id":{"name":"snd_i_win","path":"sounds/snd_i_win/snd_i_win.yy",},},
     {"id":{"name":"obj_player_1","path":"objects/obj_player_1/obj_player_1.yy",},},
     {"id":{"name":"spr_character_walking","path":"sprites/spr_character_walking/spr_character_walking.yy",},},
