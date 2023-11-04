@@ -19,6 +19,8 @@ if keyboard_check_pressed(ord("Q")){
 		mostrar_perguntas = false
 		numero_da_pergunta++;
 		audio_play_sound(snd_roleta, 1, false)
+		player_1_pontos = clamp(player_1_pontos, 0, 20)
+		player_1_pontos++;
 	}
 }
 if keyboard_check_pressed(ord("O")){
@@ -29,8 +31,27 @@ if keyboard_check_pressed(ord("O")){
 		mostrar_perguntas = false
 		numero_da_pergunta++;
 		audio_play_sound(snd_roleta, 1, false)
+		player_2_pontos = clamp(player_2_pontos, 0, 20)
+		player_2_pontos++;
 	}
 }
 
-if keyboard_check_pressed(vk_up){dificuldade_pergunta++}
+//mano quero cagar
+if (player_1_pontos <= 7) or (player_2_pontos <= 7){
+	dificuldade_pergunta = 1
+}
+if (player_1_pontos <= 11) and (player_1_pontos >= 8) or (player_2_pontos <= 11) and (player_2_pontos >= 8){
+	dificuldade_pergunta = 2
+}
+if (player_1_pontos <= 15) and (player_1_pontos >= 12) or (player_2_pontos <= 15) and (player_2_pontos >= 12){
+	dificuldade_pergunta = 3
+}
+if (player_1_pontos >= 16) or (player_1_pontos >= 16){
+	dificuldade_pergunta = 4
+}
+
+
+
+
+if keyboard_check_pressed(vk_up){dificuldade_pergunta++; show_debug_message(dificuldade_pergunta)}
 if keyboard_check_pressed(vk_down){dificuldade_pergunta--}

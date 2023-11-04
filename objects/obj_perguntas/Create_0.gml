@@ -5,6 +5,8 @@ teste = 0;
 correta_agora_1 = noone;
 correta_agora_2 = noone;
 mostrar_perguntas = false;
+player_1_pontos = 0;
+player_2_pontos = 0;
 
 //player 1 opcoes lmao
 number_xpos_player_1 = [192, 320, 224, 288, 192, 320, 64, 448, 256];//posicoes x

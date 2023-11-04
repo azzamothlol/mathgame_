@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_numeros","order":3,"path":"objects/obj_numeros/obj_numeros.yy",},
     {"name":"spr_counter_question_refresh","order":15,"path":"sprites/spr_counter_question_refresh/spr_counter_question_refresh.yy",},
+    {"name":"points_player_2","order":16,"path":"sprites/points_player_2/points_player_2.yy",},
     {"name":"snd_i_win","order":1,"path":"sounds/snd_i_win/snd_i_win.yy",},
     {"name":"spr_character_walking","order":9,"path":"sprites/spr_character_walking/spr_character_walking.yy",},
     {"name":"obj_player_pontos_1","order":3,"path":"objects/obj_player_pontos_1/obj_player_pontos_1.yy",},
@@ -45,6 +46,7 @@
     {"name":"obj_calcolos_1","order":1,"path":"objects/obj_calcolos_1/obj_calcolos_1.yy",},
     {"name":"obj_calcolos_2","order":2,"path":"objects/obj_calcolos_2/obj_calcolos_2.yy",},
     {"name":"obj_menu","order":6,"path":"objects/obj_menu/obj_menu.yy",},
+    {"name":"points_player_1","order":17,"path":"sprites/points_player_1/points_player_1.yy",},
     {"name":"obj_perguntas","order":7,"path":"objects/obj_perguntas/obj_perguntas.yy",},
     {"name":"spr_col","order":1,"path":"sprites/spr_col/spr_col.yy",},
     {"name":"obj_number_spawnser_2","order":1,"path":"objects/obj_number_spawnser_2/obj_number_spawnser_2.yy",},
