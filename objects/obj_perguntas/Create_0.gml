@@ -4,9 +4,15 @@ respostas = 0;//resposta da pergunta
 teste = 0;
 correta_agora_1 = noone;
 correta_agora_2 = noone;
-mostrar_perguntas = false;
-player_1_pontos = 0;
-player_2_pontos = 0;
+mostrar_perguntas = true;
+global.player_1_pontos = 0;
+global.player_2_pontos = 0;
+aldio = noone;
+
+pontos = instance_create_layer(640, 320, "pontos_mostra", obj_pontos_mostra)
+pontos.image_xscale = 0.35;
+pontos.image_yscale = 0.35;
+//[ 640,192,0.35,0.35 ]
 
 //player 1 opcoes lmao
 number_xpos_player_1 = [192, 320, 224, 288, 192, 320, 64, 448, 256];//posicoes x
@@ -166,3 +172,6 @@ function gerar_opcoes(){
 		 }
 	}
 }
+
+criar_perguntas();
+gerar_opcoes();
