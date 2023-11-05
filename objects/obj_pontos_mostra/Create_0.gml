@@ -11,5 +11,3 @@ mostrar_pontos_2 = true;
 player_2_ponto = false;
 player_1_ponto = false;
 
-a = [x, y, image_xscale, image_yscale]
-show_debug_message(a)

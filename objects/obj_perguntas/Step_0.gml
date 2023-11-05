@@ -2,8 +2,9 @@
 if (image_speed = 1) and (image_index > 16 ){
 	image_speed = 0;
 	image_index = 0;
-	mostrar_perguntas = true
-	audio_stop_sound(aldio)
+	mostrar_perguntas = true;
+	audio_stop_sound(aldio);
+	audio_play_sound(snd_bell, 1, false);
 }
 if keyboard_check_pressed(vk_enter){
 	image_speed = 1;
@@ -25,6 +26,9 @@ if keyboard_check_pressed(ord("Q")){
 		global.player_1_pontos++;
 		pontos.player_1_ponto = true;
 		show_debug_message(pontos.player_1_ponto);
+		if (global.player_1_pontos == 20){
+			audio_play_sound(snd_i_win, 1, false)
+		}
 	}
 }
 if keyboard_check_pressed(ord("O")){
@@ -32,12 +36,15 @@ if keyboard_check_pressed(ord("O")){
 		criar_perguntas();
 		gerar_opcoes();
 		image_speed = 1;
-		mostrar_perguntas = false
+		mostrar_perguntas = false;
 		numero_da_pergunta++;
-		aldio = audio_play_sound(snd_roleta, 1, false)
-		global.player_2_pontos = clamp(global.player_2_pontos, 0, 20)
+		aldio = audio_play_sound(snd_roleta, 1, false);
+		global.player_2_pontos = clamp(global.player_2_pontos, 0, 20);
 		global.player_2_pontos++;
 		pontos.player_2_ponto = true;
+		if (global.player_2_pontos == 20){
+			audio_play_sound(snd_i_win, 1, false)
+		}
 	}
 }
 

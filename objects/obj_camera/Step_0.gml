@@ -4,11 +4,11 @@ var _xto, _yto;
 var _offsetx = 0;
 var _camera_speed = 10;
 
-if (global.pontos_player_1 = 20){
+if (global.player_1_pontos = 20){
 	_follow = obj_player_1
 	follow_start = true
 }
-if (global.pontos_player_2 = 20){
+if (global.player_2_pontos = 20){
 	_follow = obj_player_2
 	follow_start = true;
 }

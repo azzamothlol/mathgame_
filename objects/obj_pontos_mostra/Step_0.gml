@@ -30,3 +30,9 @@ if (player_2_ponto = true){
 
 if keyboard_check_pressed(vk_up){global.player_2_pontos++}
 
+
+if (global.player_1_pontos = 20) or (global.player_2_pontos = 20){
+	sprite_index = spr_explosion;
+	image_speed = 1;
+}
+

@@ -14,9 +14,10 @@ if (mostrar_pontos_1 = true){
 	draw_text_transformed(597.4, 223, pontos_1, 1.8, 1.8, 0)
 }
 if (mostrar_pontos_2 = true){
-	draw_text_transformed(683.7, 223, pontos_2, 1.8, 1.8, 0)
+	draw_text_transformed(683.7, 223, pontos_2, 1.8, 1.8, 0);
+	mostrar_pontos_2 = false;
+	mostrar_pontos_1 = false;
 }
 draw_set_color(c_white);
 
-draw_text(x, y - 20, ycale);
 
