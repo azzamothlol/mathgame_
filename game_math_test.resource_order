@@ -61,6 +61,7 @@
     {"name":"points_player_1","order":17,"path":"sprites/points_player_1/points_player_1.yy",},
     {"name":"obj_perguntas","order":7,"path":"objects/obj_perguntas/obj_perguntas.yy",},
     {"name":"spr_col","order":1,"path":"sprites/spr_col/spr_col.yy",},
+    {"name":"snd_song","order":6,"path":"sounds/snd_song/snd_song.yy",},
     {"name":"obj_number_spawnser_2","order":1,"path":"objects/obj_number_spawnser_2/obj_number_spawnser_2.yy",},
     {"name":"snd_beep","order":4,"path":"sounds/snd_beep/snd_beep.yy",},
     {"name":"spr_tileset_table_placeholder","order":2,"path":"sprites/spr_tileset_table_placeholder/spr_tileset_table_placeholder.yy",},
