@@ -8,6 +8,8 @@ mostrar_perguntas = true;
 global.player_1_pontos = 0;
 global.player_2_pontos = 0;
 aldio = noone;
+jogador_1_ganha = false;
+jogador_2_ganha = false;
 
 pontos = instance_create_layer(640, 320, "pontos_mostra", obj_pontos_mostra)
 pontos.image_xscale = 0.35;

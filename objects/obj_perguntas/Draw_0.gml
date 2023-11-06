@@ -1,16 +1,11 @@
-
-if (global.player_1_pontos != 20) or (global.player_2_pontos != 20){
-	draw_self()
-}
-
-draw_set_color(c_red)
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
+draw_self()
+draw_set_color(c_red);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 if (mostrar_perguntas = true){
-	draw_text_transformed(x, y - 5, string_pergunta, 1.40, 1.70, 0)
+	draw_text_transformed(x, y - 5, string_pergunta, 1.40, 1.70, 0);
 }
-
-draw_set_color(c_white)
+draw_set_color(c_white);
 
 
 

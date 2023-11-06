@@ -22,12 +22,12 @@ if keyboard_check_pressed(ord("Q")){
 		mostrar_perguntas = false
 		numero_da_pergunta++;
 		aldio =audio_play_sound(snd_roleta, 1, false)
-		global.player_1_pontos = clamp(global.player_1_pontos, 0, 20)
-		global.player_1_pontos++;
+		global.player_1_pontos = clamp(global.player_1_pontos + 1, 0, 20);
 		pontos.player_1_ponto = true;
-		show_debug_message(pontos.player_1_ponto);
+		//show_debug_message(pontos.player_1_ponto);
 		if (global.player_1_pontos == 20){
 			audio_play_sound(snd_i_win, 1, false)
+			jogador_1_ganha = true;
 		}
 	}
 }
@@ -39,12 +39,14 @@ if keyboard_check_pressed(ord("O")){
 		mostrar_perguntas = false;
 		numero_da_pergunta++;
 		aldio = audio_play_sound(snd_roleta, 1, false);
-		global.player_2_pontos = clamp(global.player_2_pontos, 0, 20);
-		global.player_2_pontos++;
+		global.player_2_pontos = clamp(global.player_2_pontos + 1, 0, 20);
 		pontos.player_2_ponto = true;
 		if (global.player_2_pontos == 20){
-			audio_play_sound(snd_i_win, 1, false)
+			audio_play_sound(snd_i_win, 1, false);
+			jogador_2_ganha = true;
 		}
+		
+	show_debug_message(global.player_2_pontos)
 	}
 }
 
@@ -62,8 +64,9 @@ if (global.player_1_pontos >= 16) or (global.player_1_pontos >= 16){
 	dificuldade_pergunta = 4
 }
 
-
-
+if (global.player_1_pontos = 20) or (global.player_2_pontos = 20){
+	string_pergunta = ("!" + " " + "!" + " " + "!")
+}	
 
 if keyboard_check_pressed(vk_up){dificuldade_pergunta++}
 if keyboard_check_pressed(vk_down){dificuldade_pergunta--}
