@@ -5,6 +5,6 @@ for (var _i = 2 ; _i > -1; _i--) {
 	}else{
 		draw_set_color(c_white);
 	}
-	draw_text (room_width/2, room_height/2 + (_i * 30), options[_i]);
+	draw_text_transformed(room_width/2, (room_height/2 - 7) + (_i * 36), options[_i], 2, 2, 0);
 	draw_set_color(c_white);
 }

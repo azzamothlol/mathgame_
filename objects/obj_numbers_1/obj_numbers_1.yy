@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "player_1",
-    "path": "folders/Objects/player_1.yy",
+    "name": "game_1",
+    "path": "folders/Objects/game_1.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,9 +32,6 @@
     "name": "spr_numbers",
     "path": "sprites/spr_numbers/spr_numbers.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_numbers",
-    "path": "sprites/spr_numbers/spr_numbers.yy",
-  },
+  "spriteMaskId": null,
   "visible": true,
 }

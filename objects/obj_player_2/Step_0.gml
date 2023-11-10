@@ -1,9 +1,9 @@
 if (global.player_can_move = true){
 	//variaveis sla lol
-	var _xmove = (keyboard_check(ord("L")) - keyboard_check(ord("J")));// -1 0 1
+	var _xmove = (keyboard_check(vk_right) - keyboard_check(vk_left));// -1 0 1
 	var _on_ground = place_meeting(x, y+1, obj_colision);
-	var _key_jump = keyboard_check_pressed(ord("I"));
-	var _key_jumo_releace = keyboard_check_released(ord("I"));
+	var _key_jump = keyboard_check_pressed(vk_up);
+	var _key_jumo_releace = keyboard_check_released(vk_up);
 	//--------------------incremento da velocidade-------------------------------------
 	if (_xmove != 0){
 		spd += spd_incriment;

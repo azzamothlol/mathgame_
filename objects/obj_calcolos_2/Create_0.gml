@@ -1,1 +1,0 @@
-perguntas = "hello world"

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "player_1",
-    "path": "folders/Objects/player_1.yy",
+    "name": "game_1",
+    "path": "folders/Objects/game_1.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,10 +29,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_number_spawn",
-    "path": "sprites/spr_number_spawn/spr_number_spawn.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -36,7 +36,7 @@ if (player_2_ponto = true){
 	player_2_ponto = false;
 }
 
-if keyboard_check_pressed(vk_up){global.player_2_pontos++}
+//if keyboard_check_pressed(vk_up){global.player_2_pontos++}
 
 if keyboard_check_pressed(vk_down){
 	mostrar_pontos_1 = true;

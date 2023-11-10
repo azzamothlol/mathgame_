@@ -80,8 +80,3 @@ if (global.player_can_move = true){
 		ycale = .6;
 	} 
 }
-
-
-
-
-//eu vou me matar
