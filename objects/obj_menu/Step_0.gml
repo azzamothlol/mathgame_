@@ -9,7 +9,7 @@ if (keyboard_check(vk_enter)){
 		room_goto(spr_player)
 		break
 		case 1:
-		//nothing lmao 
+		room_goto(rm_teste_1)
 		break
 		case 2:
 		game_end()

@@ -1,3 +1,3 @@
 //fuking menu whgathadhfiuawhfiulahsf
-options = ["start", "credits", "quit"];
+options = ["jogar", "teste 1", "sair"];
 selected = 0;

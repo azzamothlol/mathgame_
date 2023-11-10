@@ -1,18 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_perguntas",
+  "name": "obj_player_1_jogo_2",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "game_1",
-    "path": "folders/Objects/game_1.yy",
+    "name": "jogo 2",
+    "path": "folders/Objects/jogo 2.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_counter_question_refresh",
-    "path": "sprites/spr_counter_question_refresh/spr_counter_question_refresh.yy",
+    "name": "spr_arma_estilingue",
+    "path": "sprites/spr_arma_estilingue/spr_arma_estilingue.yy",
   },
   "spriteMaskId": null,
   "visible": true,
